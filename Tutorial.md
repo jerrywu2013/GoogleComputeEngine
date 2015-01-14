@@ -1,12 +1,12 @@
 GoogleComputeEngine SSL Certificate Installation Tutorial
 
 
-Step One Install Apache and Openssl
+Step One Install Apache and Openssl：
 ```
 apt-get install apache2
 apt-get install openssl
 ```
-How to Find your Server's IP address
+How to Find your Server's IP address：
 ```
 ifconfig eth0 | grep inet | awk '{ print $2 }'
 ```
