@@ -77,6 +77,10 @@ Restart Apache:
 ```
 service apache2 stop
 service apache2 startssl
-#Check Apache Port 443 working
+
+```
+Check Apache Port 443:
+```
+
 netstat -ntulp | grep 443
 ```
