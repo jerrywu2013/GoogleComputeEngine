@@ -1,5 +1,4 @@
 GoogleComputeEngine SSL Certificate Installation Tutorial
-==========
 ```
 #Step One Install Apache
 apt-get install apache2
@@ -7,8 +6,7 @@ apt-get install openssl
 #How to Find your Server's IP address
 ifconfig eth0 | grep inet | awk '{ print $2 }'
 ```
-
-#################Create SSL Certificate：
+Create SSL Certificate：
 ```
 dpkg -l | grep openssl
 apt-get install openssl
@@ -28,7 +26,7 @@ A challenge password []:
 An optional company name []:
 ls -l
 ```
-##################Creating a Self-Signed SSL Certificate:
+Creating a Self-Signed SSL Certificate:
 ```
 openssl x509 -req -days 365 -in 104.155.192.71.csr -signkey 104.155.192.71.key -out 104.155.192.71.crt
 
@@ -38,9 +36,7 @@ cp 104.155.192.71.csr /usr/local/etc/pki
 
 vim /etc/apache2/sites-available/default
 ```
-
-
-####Create VirtualHost:
+Create VirtualHost:
 ```
 NameVirtualHost *:443
 <VirtualHost *:443>
@@ -73,8 +69,7 @@ SSLCertificateFile /usr/local/etc/pki/104.155.192.71.crt
 SSLCertificateKeyFile /usr/local/etc/pki/104.155.192.71.key
 </VirtualHost>
 ```
-
-##
+Restart Apache:
 ```
 service apache2 stop
 service apache2 startssl
