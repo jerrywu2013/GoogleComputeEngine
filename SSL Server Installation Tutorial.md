@@ -73,11 +73,6 @@ SSLCertificateFile /usr/local/etc/pki/104.155.192.71.crt
 SSLCertificateKeyFile /usr/local/etc/pki/104.155.192.71.key
 </VirtualHost>
 ```
-LoadModule
-```
-a2enmod ssl
-a2ensite default-ssl
-```
 ```
 service apache2 stop
 service apache2 startssl
@@ -87,4 +82,9 @@ Check Apache Port 443:
 ```
 
 netstat -ntulp | grep 443
+```
+LoadModule and setting default-ssl (Virtual Host)
+```
+a2enmod ssl
+a2ensite default-ssl
 ```
