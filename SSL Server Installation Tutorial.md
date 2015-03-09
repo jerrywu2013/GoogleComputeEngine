@@ -73,7 +73,11 @@ SSLCertificateFile /usr/local/etc/pki/104.155.192.71.crt
 SSLCertificateKeyFile /usr/local/etc/pki/104.155.192.71.key
 </VirtualHost>
 ```
-Restart Apache:
+LoadModule
+```
+a2enmod ssl
+a2ensite default-ssl
+```
 ```
 service apache2 stop
 service apache2 startssl
