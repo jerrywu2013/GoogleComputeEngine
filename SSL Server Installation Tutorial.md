@@ -88,3 +88,23 @@ LoadModule and setting default-ssl (Virtual Host)
 a2enmod ssl
 a2ensite default-ssl
 ```
+Strong SSL Security on Apache2
+```
+SSLCipherSuite AES128+EECDH:AES128+EDH
+SSLProtocol All -SSLv2 -SSLv3
+SSLHonorCipherOrder On
+Header always set Strict-Transport-Security "max-age=63072000; includeSubdomains; preload"
+Header always set X-Frame-Options DENY
+Header always set X-Content-Type-Options nosniff
+# Requires Apache >= 2.4
+SSLCompression off 
+SSLUseStapling on 
+SSLStaplingCache "shmcb:logs/stapling-cache(150000)" 
+```
+Create SSL Certificate(SHA2)
+```
+openssl genrsa -aes256 -out ${HOST}.key 2048
+openssl rsa -in ${HOST}.key -out ${HOST}.key
+openssl req -new -sha256 -key ${HOST}.key -out ${HOST}.csr
+openssl req -in ${HOST}.csr -text
+```
