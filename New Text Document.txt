@@ -1,0 +1,8 @@
+Elasticsearch Installation Tutorial
+
+#Debian
+sudo apt-get update
+sudo apt-get install openjdk-6-jdk
+
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-$VERSION.deb
+sudo dpkg -i elasticsearch-$VERSION.deb
