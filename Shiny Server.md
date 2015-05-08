@@ -23,11 +23,7 @@ sudo apt-get install openjdk-7-jdk
 export LD_LIBRARY_PATH=/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server
 R CMD javareconf 
 ```
-####Setting Shiny R package
-```
-sudo nano /usr/lib/R/etc/Renviron
-```
-Comment the line: RLIBSUSER=${RLIBSUSER-'~/R/x86_64-pc-linux-gnu-library/3.0'} by adding a "#" at the beginning of that line.
 ####Install the following R package
 ```
+install.packages(c('GGally', 'geosphere', 'ggmap', 'reshape2', 'xlsx', 'gdata', 'foreign', 'RSQLite', 'XML', 'jsonlite', 'dplyr', 'ggplot2', 'rmarkdown', 'knitr', 'shiny' )) 
 ```
