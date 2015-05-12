@@ -35,4 +35,8 @@ kairosdb.service.datastore=org.kairosdb.datastore.cassandra.CassandraModule
 cd kairosdb/bin
 sudo ./kairosdb.sh run 
 ```
-######http://localhost:8080
+######
+http://localhost:8080
+```
+cqlsh
+```
