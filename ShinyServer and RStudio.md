@@ -15,6 +15,11 @@ sudo apt-get install gdebi-core
 wget http://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.3.0.403-amd64.deb
 sudo gdebi shiny-server-1.3.0.403-amd64.deb
 ```
+```
+sudo reload shiny-server
+sudo start shiny-server
+```
+
 #### http://IP:3838/
 #### Install R packages
 ```
