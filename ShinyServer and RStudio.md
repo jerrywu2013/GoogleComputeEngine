@@ -34,3 +34,6 @@ wget http://download2.rstudio.org/rstudio-server-0.98.1103-amd64.deb
 sudo gdebi rstudio-server-0.98.1103-amd64.deb
 sudo chmod -R 777 /usr/local/lib/R
 ```
+
+#####
+http://chrisrzhou.datanaut.io/blog/tutorials/2015/01/19/r-shiny-ec2-bootstrap-guide/#install-shiny-server
