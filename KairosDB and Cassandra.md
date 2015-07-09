@@ -40,3 +40,5 @@ http://localhost:8080
 ```
 cqlsh
 ```
+
+Reference: https://github.com/FMir55/KairosDB/blob/master/Introduction.md
