@@ -16,6 +16,7 @@ deb http://www.apache.org/dist/cassandra/debian 20x main
 deb-src http://www.apache.org/dist/cassandra/debian 20x main
 ```
 ```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
 sudo apt-get install cassandra
 sudo bin/cassandra -f 
 ```
