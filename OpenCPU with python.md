@@ -5,6 +5,9 @@
 sudo add-apt-repository ppa:opencpu/opencpu-1.4
 sudo apt-get install opencpu
 ```
+#####Problem: apt-get-repository Command is Missing
+#####sudo: add-apt-repository: command not found)
+#####sudo apt-get install software-properties-common python-software-properties
 #### Install R
 ```
 sudo apt-get update
