@@ -108,3 +108,9 @@ openssl rsa -in ${HOST}.key -out ${HOST}.key
 openssl req -new -sha256 -key ${HOST}.key -out ${HOST}.csr
 openssl req -in ${HOST}.csr -text
 ```
+Free SSL
+```
+wget https://dl.eff.org/certbot-auto
+chmod a+x certbot-auto
+./certbot-auto
+```
